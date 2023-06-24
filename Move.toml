@@ -1,0 +1,13 @@
+[package]
+name = 'capability_heist'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'aptos-node-v1.5.0'
+subdir = 'aptos-move/framework/aptos-framework'
+MoveNursery = { git = "https://github.com/move-language/move.git", subdir = "language/move-stdlib/nursery", rev = "main" }
+
+[addresses]
+overmind = '0x1234'
+robber = '0x1234'
